@@ -36,42 +36,42 @@
             "title": "Installation"
         },
         {
-            "location": "/module1/topic1/",
+            "location": "/module1/topic_1/",
             "text": "Test topic",
             "title": "Test topic"
         },
         {
-            "location": "/module1/topic1/#test-topic",
+            "location": "/module1/topic_1/#test-topic",
             "text": "",
             "title": "Test topic"
         },
         {
-            "location": "/module1/topic2/",
+            "location": "/module1/topic_2/",
             "text": "Another topic",
             "title": "Another topic"
         },
         {
-            "location": "/module1/topic2/#another-topic",
+            "location": "/module1/topic_2/#another-topic",
             "text": "",
             "title": "Another topic"
         },
         {
-            "location": "/module2/topic1/",
+            "location": "/module2/topic_1/",
             "text": "This topic has a title",
             "title": "This topic has a title"
         },
         {
-            "location": "/module2/topic1/#this-topic-has-a-title",
+            "location": "/module2/topic_1/#this-topic-has-a-title",
             "text": "",
             "title": "This topic has a title"
         },
         {
-            "location": "/module2/topic2/",
+            "location": "/module2/topic_2/",
             "text": "This is another topic",
             "title": "This is another topic"
         },
         {
-            "location": "/module2/topic2/#this-is-another-topic",
+            "location": "/module2/topic_2/#this-is-another-topic",
             "text": "",
             "title": "This is another topic"
         }
