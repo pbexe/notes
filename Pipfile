@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mkdocs = "==0.17.2"
+mkdocs-material = "*"
+tornado = "==4.5.3"
+pygments = "*"
+pymdown-extensions = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
