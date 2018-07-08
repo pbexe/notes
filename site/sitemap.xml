@@ -10,11 +10,35 @@
     
 
     
+        
     <url>
-     <loc>/other/</loc>
+     <loc>/module1/topic1/</loc>
      <lastmod>2018-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/module1/topic2/</loc>
+     <lastmod>2018-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/module2/topic1/</loc>
+     <lastmod>2018-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/module2/topic2/</loc>
+     <lastmod>2018-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>

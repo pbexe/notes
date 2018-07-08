@@ -71,7 +71,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#welcome-to-mkdocs" tabindex="1" class="md-skip">
+      <a href="#markdown-reference" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -97,7 +97,7 @@
                 Notes
               </span>
               <span class="md-header-nav__topic">
-                Welcome to MkDocs
+                Markdown reference
               </span>
             
           
@@ -177,11 +177,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Welcome to MkDocs
+        Markdown reference
       </label>
     
-    <a href="." title="Welcome to MkDocs" class="md-nav__link md-nav__link--active">
-      Welcome to MkDocs
+    <a href="." title="Markdown reference" class="md-nav__link md-nav__link--active">
+      Markdown reference
     </a>
     
       
@@ -195,15 +195,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" title="Commands" class="md-nav__link">
-    Commands
+  <a href="#standard-stuff" title="Standard stuff" class="md-nav__link">
+    Standard stuff
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" title="Project layout" class="md-nav__link">
-    Project layout
+  <a href="#notes-etc" title="Notes etc." class="md-nav__link">
+    Notes etc.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maths" title="Maths" class="md-nav__link">
+    Maths
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-stuff" title="Other stuff" class="md-nav__link">
+    Other stuff
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
@@ -224,10 +245,94 @@
       
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Module1
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Module1
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="other/" title="Other" class="md-nav__link">
-      Other
+    <a href="module1/topic1/" title="Topic1" class="md-nav__link">
+      Topic1
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="module1/topic2/" title="Topic2" class="md-nav__link">
+      Topic2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Module2
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Module2
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="module2/topic1/" title="Topic1" class="md-nav__link">
+      Topic1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="module2/topic2/" title="Topic2" class="md-nav__link">
+      Topic2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -252,15 +357,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" title="Commands" class="md-nav__link">
-    Commands
+  <a href="#standard-stuff" title="Standard stuff" class="md-nav__link">
+    Standard stuff
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" title="Project layout" class="md-nav__link">
-    Project layout
+  <a href="#notes-etc" title="Notes etc." class="md-nav__link">
+    Notes etc.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maths" title="Maths" class="md-nav__link">
+    Maths
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-stuff" title="Other stuff" class="md-nav__link">
+    Other stuff
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
   </a>
   
 </li>
@@ -282,27 +408,94 @@
               
                 
                 
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="http://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code class="codehilite">mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code class="codehilite">mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code class="codehilite">mkdocs build</code> - Build the documentation site.</li>
-<li><code class="codehilite">mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<div class="codehilite"><pre><span></span>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+                <h1 id="markdown-reference">Markdown reference</h1>
+<h2 id="standard-stuff">Standard stuff</h2>
+<p><em>Standard</em> <strong>markdown</strong> stuff</p>
+<div class="codehilite"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Syntax highlighting&quot;</span><span class="p">)</span>
 </pre></div>
 
-
-<div>
-<div class="MathJax_Preview">\frac{3}{4}</div>
-<script type="math/tex; mode=display">\frac{3}{4}</script>
+<h2 id="notes-etc">Notes etc.</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a note</p>
 </div>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>This is a bug</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>These work for:</p>
+<ul>
+<li>Note</li>
+<li>Abstract</li>
+<li>Info</li>
+<li>Tip</li>
+<li>Success</li>
+<li>Question</li>
+<li>Warning</li>
+<li>Failure</li>
+<li>Danger</li>
+<li>Bug</li>
+<li>Example</li>
+<li>Quote</li>
+</ul>
+</div>
+<p>Clicky boi:</p>
+<details class="question"><summary>What is the answer to life the universe and everything?</summary><p>42</p></details><h2 id="maths">Maths</h2>
+<div>
+<div class="MathJax_Preview">
+f(x) = \left\{
+  \begin{array}{lr}
+    x^2 &amp; : x &lt; 0\\
+    x^3 &amp; : x \ge 0
+  \end{array}
+\right.
+</div>
+<script type="math/tex; mode=display">
+f(x) = \left\{
+  \begin{array}{lr}
+    x^2 & : x < 0\\
+    x^3 & : x \ge 0
+  \end{array}
+\right.
+</script>
+</div>
+<h2 id="other-stuff">Other stuff</h2>
+<ul>
+<li>Emojis <img alt="😄" class="emojione" src="https://cdn.jsdelivr.net/emojione/assets/svg/1f604.svg" title=":smile:" /></li>
+<li>Inline highlighting for <code class="codehilite"><span class="k">print</span><span class="p">(</span><span class="s2">&quot;code&quot;</span><span class="p">)</span></code></li>
+<li>Auto adding of <a href="https://www.google.co.uk/search?q=links">https://www.google.co.uk/search?q=links</a></li>
+<li>Highlighting of <mark>important</mark> stuff</li>
+<li>Useful arrows and stuff &rarr; &plusmn;</li>
+<li>Tasks:<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Nulla lobortis egestas semper</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Vestibulum convallis sit amet nisi a tincidunt<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In hac habitasse platea dictumst</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> In scelerisque nibh non dolor mollis congue sed et metus</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Sed egestas felis quis elit dapibus, ac aliquet turpis mattis</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Praesent sed risus massa</li>
+</ul>
+</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Nulla vel eros venenatis, imperdiet enim id, faucibus nisi</li>
+</ul>
+</li>
+</ul>
+<h2 id="installation">Installation</h2>
+<p>Clone:
+<code class="codehilite">git clone ...</code></p>
+<p>Install:
+<code class="codehilite">pipenv install</code></p>
+<p>Live reload:
+<code class="codehilite">pipenv run mkdocs serve</code></p>
+<p>Build:
+<code class="codehilite">pipenv run mkdocs build</code></p>
+<p>Deploy:
+<code class="codehilite">pipenv run mkdocs gh-deploy</code></p>
                 
                   
                 
@@ -324,13 +517,13 @@ docs/
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="other/" title="Other" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="module1/topic1/" title="Topic1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Other
+                Topic1
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -2,33 +2,78 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.\n\n\n\n\n\n\n\n\\frac{3}{4}\n\n\n\\frac{3}{4}",
-            "title": "Welcome to MkDocs"
+            "text": "Markdown reference\n\n\nStandard stuff\n\n\nStandard\n \nmarkdown\n stuff\n\n\nfor\n \ni\n \nin\n \nrange\n \n(\n1\n,\n100\n):\n\n    \nprint\n(\n\"Syntax highlighting\"\n)\n\n\n\n\n\nNotes etc.\n\n\n\n\nNote\n\n\nThis is a note\n\n\n\n\n\n\nBug\n\n\nThis is a bug\n\n\n\n\n\n\nInfo\n\n\nThese work for:\n\n\n\n\nNote\n\n\nAbstract\n\n\nInfo\n\n\nTip\n\n\nSuccess\n\n\nQuestion\n\n\nWarning\n\n\nFailure\n\n\nDanger\n\n\nBug\n\n\nExample\n\n\nQuote\n\n\n\n\n\n\nClicky boi:\n\n\nWhat is the answer to life the universe and everything?\n42\nMaths\n\n\n\n\n\nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.\n\n\n\n\nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.\n\n\n\n\n\nOther stuff\n\n\n\n\nEmojis \n\n\nInline highlighting for \nprint\n(\n\"code\"\n)\n\n\nAuto adding of \nhttps://www.google.co.uk/search?q=links\n\n\nHighlighting of \nimportant\n stuff\n\n\nUseful arrows and stuff \u2192 \u00b1\n\n\nTasks:\n\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit\n\n\n Nulla lobortis egestas semper\n\n\n Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n\n\n Vestibulum convallis sit amet nisi a tincidunt\n\n\n In hac habitasse platea dictumst\n\n\n In scelerisque nibh non dolor mollis congue sed et metus\n\n\n Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n\n\n Praesent sed risus massa\n\n\n\n\n\n\n Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n\n\n Nulla vel eros venenatis, imperdiet enim id, faucibus nisi\n\n\n\n\n\n\n\n\nInstallation\n\n\nClone:\n\ngit clone ...\n\n\nInstall:\n\npipenv install\n\n\nLive reload:\n\npipenv run mkdocs serve\n\n\nBuild:\n\npipenv run mkdocs build\n\n\nDeploy:\n\npipenv run mkdocs gh-deploy",
+            "title": "Markdown reference"
         },
         {
-            "location": "/#welcome-to-mkdocs",
-            "text": "For full documentation visit  mkdocs.org .",
-            "title": "Welcome to MkDocs"
+            "location": "/#markdown-reference",
+            "text": "",
+            "title": "Markdown reference"
         },
         {
-            "location": "/#commands",
-            "text": "mkdocs new [dir-name]  - Create a new project.  mkdocs serve  - Start the live-reloading docs server.  mkdocs build  - Build the documentation site.  mkdocs help  - Print this help message.",
-            "title": "Commands"
+            "location": "/#standard-stuff",
+            "text": "Standard   markdown  stuff  for   i   in   range   ( 1 , 100 ): \n     print ( \"Syntax highlighting\" )",
+            "title": "Standard stuff"
         },
         {
-            "location": "/#project-layout",
-            "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.   \\frac{3}{4}  \\frac{3}{4}",
-            "title": "Project layout"
+            "location": "/#notes-etc",
+            "text": "Note  This is a note    Bug  This is a bug    Info  These work for:   Note  Abstract  Info  Tip  Success  Question  Warning  Failure  Danger  Bug  Example  Quote    Clicky boi:  What is the answer to life the universe and everything? 42",
+            "title": "Notes etc."
         },
         {
-            "location": "/other/",
-            "text": "This is another page\n\n\nprint\n(\n\"Hello world\"\n)",
-            "title": "This is another page"
+            "location": "/#maths",
+            "text": "f(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.  \nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.",
+            "title": "Maths"
         },
         {
-            "location": "/other/#this-is-another-page",
-            "text": "print ( \"Hello world\" )",
-            "title": "This is another page"
+            "location": "/#other-stuff",
+            "text": "Emojis   Inline highlighting for  print ( \"code\" )  Auto adding of  https://www.google.co.uk/search?q=links  Highlighting of  important  stuff  Useful arrows and stuff \u2192 \u00b1  Tasks:   Lorem ipsum dolor sit amet, consectetur adipiscing elit   Nulla lobortis egestas semper   Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est   Vestibulum convallis sit amet nisi a tincidunt   In hac habitasse platea dictumst   In scelerisque nibh non dolor mollis congue sed et metus   Sed egestas felis quis elit dapibus, ac aliquet turpis mattis   Praesent sed risus massa     Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque   Nulla vel eros venenatis, imperdiet enim id, faucibus nisi",
+            "title": "Other stuff"
+        },
+        {
+            "location": "/#installation",
+            "text": "Clone: git clone ...  Install: pipenv install  Live reload: pipenv run mkdocs serve  Build: pipenv run mkdocs build  Deploy: pipenv run mkdocs gh-deploy",
+            "title": "Installation"
+        },
+        {
+            "location": "/module1/topic1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/module1/topic1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/module1/topic2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/module1/topic2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/module2/topic1/",
+            "text": "This topic has a title",
+            "title": "This topic has a title"
+        },
+        {
+            "location": "/module2/topic1/#this-topic-has-a-title",
+            "text": "",
+            "title": "This topic has a title"
+        },
+        {
+            "location": "/module2/topic2/",
+            "text": "This is another topic",
+            "title": "This is another topic"
+        },
+        {
+            "location": "/module2/topic2/#this-is-another-topic",
+            "text": "",
+            "title": "This is another topic"
         }
     ]
 }

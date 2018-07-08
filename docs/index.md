@@ -1,19 +1,87 @@
-# Welcome to MkDocs
+# Markdown reference
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Standard stuff
 
-## Commands
+*Standard* **markdown** stuff
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+```python
+for i in range (1,100):
+    print("Syntax highlighting")
+```
 
-## Project layout
+## Notes etc.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+!!! note
+    This is a note
 
-$$\frac{3}{4}$$
+!!! bug
+    This is a bug
+
+!!! info
+    These work for:
+
+    - Note
+    - Abstract
+    - Info
+    - Tip
+    - Success
+    - Question
+    - Warning
+    - Failure
+    - Danger
+    - Bug
+    - Example
+    - Quote
+
+Clicky boi:
+
+??? Question "What is the answer to life the universe and everything?"
+    42
+
+## Maths
+
+$$
+f(x) = \left\{
+  \begin{array}{lr}
+    x^2 & : x < 0\\
+    x^3 & : x \ge 0
+  \end{array}
+\right.
+$$
+
+## Other stuff
+
+- Emojis :smile:
+- Inline highlighting for `#!python print("code")`
+- Auto adding of https://www.google.co.uk/search?q=links
+- Highlighting of ==important== stuff
+- Useful arrows and stuff --> +/-
+- Tasks:
+    * [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    * [x] Nulla lobortis egestas semper
+    * [x] Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est
+    * [ ] Vestibulum convallis sit amet nisi a tincidunt
+        * [x] In hac habitasse platea dictumst
+        * [x] In scelerisque nibh non dolor mollis congue sed et metus
+        * [x] Sed egestas felis quis elit dapibus, ac aliquet turpis mattis
+        * [ ] Praesent sed risus massa
+    * [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+    * [ ] Nulla vel eros venenatis, imperdiet enim id, faucibus nisi
+
+
+## Installation
+
+Clone:
+`git clone ...`
+
+Install:
+`pipenv install`
+
+Live reload:
+`pipenv run mkdocs serve`
+
+Build:
+`pipenv run mkdocs build`
+
+Deploy:
+`pipenv run mkdocs gh-deploy`
