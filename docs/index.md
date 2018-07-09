@@ -7,6 +7,7 @@
 ```python
 for i in range (1,100):
     print("Syntax highlighting")
+    print("George was here")
 ```
 
 ## Notes etc.
