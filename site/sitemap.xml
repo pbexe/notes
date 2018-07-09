@@ -12,13 +12,13 @@
     
         
     <url>
-     <loc>/module1/topic_1/</loc>
+     <loc>/Module_1/topic_1/</loc>
      <lastmod>2018-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/module1/topic_2/</loc>
+     <loc>/Module_1/topic_2/</loc>
      <lastmod>2018-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -28,13 +28,13 @@
     
         
     <url>
-     <loc>/module2/topic_1/</loc>
+     <loc>/Module_2/topic_1/</loc>
      <lastmod>2018-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/module2/topic_2/</loc>
+     <loc>/Module_2/topic_2/</loc>
      <lastmod>2018-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
