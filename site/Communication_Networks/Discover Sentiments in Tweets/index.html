@@ -1,0 +1,1227 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.9.2">
+    
+    
+      
+        <title>Discover Sentiments in Tweets - Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.ba0fd1a6.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#1-introduction" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="Notes" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Notes
+              </span>
+              <span class="md-header-nav__topic">
+                Discover Sentiments in Tweets
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    Notes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Markdown reference" class="md-nav__link">
+      Markdown reference
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Communication Networks
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Communication Networks
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Discover Sentiments in Tweets
+      </label>
+    
+    <a href="./" title="Discover Sentiments in Tweets" class="md-nav__link md-nav__link--active">
+      Discover Sentiments in Tweets
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" title="1 Introduction" class="md-nav__link">
+    1 Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data" title="2 Data" class="md-nav__link">
+    2 Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-data-source" title="2.1 Data Source" class="md-nav__link">
+    2.1 Data Source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-read-and-prepare-data" title="2.2 Read and Prepare Data" class="md-nav__link">
+    2.2 Read and Prepare Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-identify-topics" title="3 Identify Topics" class="md-nav__link">
+    3 Identify Topics
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-calculate-tf-idf-matrix" title="3.1 Calculate tf-idf matrix" class="md-nav__link">
+    3.1 Calculate tf-idf matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-nmf-analysis" title="3.2 NMF Analysis" class="md-nav__link">
+    3.2 NMF Analysis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visualize-topics-with-word-cloud" title="4 Visualize Topics with Word Cloud" class="md-nav__link">
+    4 Visualize Topics with Word Cloud
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-install-wordcloud-package" title="4.1 Install wordcloud package" class="md-nav__link">
+    4.1 Install wordcloud package
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-prepare-topics-for-wordcloud" title="4.2 Prepare topics for wordcloud" class="md-nav__link">
+    4.2 Prepare topics for wordcloud
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-visualize-topics" title="4.3 Visualize topics" class="md-nav__link">
+    4.3 Visualize topics
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-discussion" title="5 Discussion" class="md-nav__link">
+    5 Discussion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Computational Mathematics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Computational Mathematics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Computational_Mathematics/topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Computational_Mathematics/topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Data Processing And Visualisation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Data Processing And Visualisation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data_Processing_And_Visualisation/topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Data_Processing_And_Visualisation/topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Database Systems
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Database Systems
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Database_Systems/topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Database_Systems/topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Enhancing Your Employability
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Enhancing Your Employability
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Enhancing_Your_Employability/topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Enhancing_Your_Employability/topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Group Project
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Group Project
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Group_Project/topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Group_Project/topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Human Computer Interaction
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Human Computer Interaction
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Human_Computer_Interaction/topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Human_Computer_Interaction/topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Object Orientation, Algorithms And Data Structures
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        Object Orientation, Algorithms And Data Structures
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Object_Orientation%2C_Algorithms_And_Data_Structures/topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Object_Orientation%2C_Algorithms_And_Data_Structures/topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Scientific Computing
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        Scientific Computing
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Scientific_Computing/topic_1/" title="Topic 1" class="md-nav__link">
+      Topic 1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Scientific_Computing/topic_2/" title="Topic 2" class="md-nav__link">
+      Topic 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" title="1 Introduction" class="md-nav__link">
+    1 Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-data" title="2 Data" class="md-nav__link">
+    2 Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-data-source" title="2.1 Data Source" class="md-nav__link">
+    2.1 Data Source
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-read-and-prepare-data" title="2.2 Read and Prepare Data" class="md-nav__link">
+    2.2 Read and Prepare Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-identify-topics" title="3 Identify Topics" class="md-nav__link">
+    3 Identify Topics
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-calculate-tf-idf-matrix" title="3.1 Calculate tf-idf matrix" class="md-nav__link">
+    3.1 Calculate tf-idf matrix
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-nmf-analysis" title="3.2 NMF Analysis" class="md-nav__link">
+    3.2 NMF Analysis
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-visualize-topics-with-word-cloud" title="4 Visualize Topics with Word Cloud" class="md-nav__link">
+    4 Visualize Topics with Word Cloud
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-install-wordcloud-package" title="4.1 Install wordcloud package" class="md-nav__link">
+    4.1 Install wordcloud package
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-prepare-topics-for-wordcloud" title="4.2 Prepare topics for wordcloud" class="md-nav__link">
+    4.2 Prepare topics for wordcloud
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-visualize-topics" title="4.3 Visualize topics" class="md-nav__link">
+    4.3 Visualize topics
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-discussion" title="5 Discussion" class="md-nav__link">
+    5 Discussion
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Discover Sentiments in Tweets</h1>
+                
+                <h2 id="1-introduction">1 Introduction</h2>
+<p>Sentiment analysis is commonly used in marketing and customer service to answer questions such as "Is a product review positive or negative?" and "How are customers responding to a product release?" etc. </p>
+<p>Topic modeling discovers the abstract "topics" in a corpus of texts. The results from topic modeling analysis can be used in sentiment analysis. For example, they can be used to split texts into different subsets and allow us to train a separate sentiment model for each of the subsets. Training separate sentiment models for different subsets can lead to more accurate predictions than using a single model for all the texts. </p>
+<p>The purpose of this notebook is to illustrate how to discover and visualize topics from a corpus of Twitter tweets using Jupyter notebook. </p>
+<h2 id="2-data">2 Data</h2>
+<h3 id="21-data-source">2.1 Data Source</h3>
+<p>The dataset used in his example is based on the <a href="http://help.sentiment140.com/">Sentiment140</a> dataset. The Sentiment140 dataset has approximately 1,600,000 automatically annotated tweets and 6 fields for each tweet. For illustration purpose, a sample of the Sentiment140 dataset will be used. This sample has 160,000 tweets and two fields for each tweet - the polarity of the tweet and the text of the tweet. The sample dataset is located <a>here</a>. </p>
+<p>Download this dataset by running the following command</p>
+<div class="codehilite"><pre><span></span><span class="sx">!curl -L -o mydatafile.csv http://azuremlsamples.azureml.net/templatedata/Text%20-%20Input.csv</span>
+</pre></div>
+
+
+<p>After downloading the dataset, upload it to OneDrive or Dropbox as "mydatafile.csv" and import it into this notebook using the "Data" menu. </p>
+<h3 id="22-read-and-prepare-data">2.2 Read and Prepare Data</h3>
+<p>The following lines of code read the data from my blob storage into the current session.</p>
+<div class="codehilite"><pre><span></span><span class="err">!</span><span class="n">curl</span> <span class="o">-</span><span class="n">L</span> <span class="o">-</span><span class="n">o</span> <span class="n">mydatafile</span><span class="o">.</span><span class="n">csv</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">azuremlsamples</span><span class="o">.</span><span class="n">azureml</span><span class="o">.</span><span class="n">net</span><span class="o">/</span><span class="n">templatedata</span><span class="o">/</span><span class="n">Text</span><span class="o">%</span><span class="mi">20</span><span class="o">-%</span><span class="mi">20</span><span class="n">Input</span><span class="o">.</span><span class="n">csv</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span>  <span class="c1">% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current</span>
+                                 <span class="nv">Dload</span>  <span class="nv">Upload</span>   <span class="nv">Total</span>   <span class="nv">Spent</span>    <span class="nv">Left</span>  <span class="nv">Speed</span>
+<span class="mi">100</span> <span class="mf">11.8</span><span class="nv">M</span>  <span class="mi">100</span> <span class="mf">11.8</span><span class="nv">M</span>    <span class="mi">0</span>     <span class="mi">0</span>  <span class="mi">8031</span><span class="s s-Atom">k</span>      <span class="mi">0</span>  <span class="mi">0</span><span class="s s-Atom">:</span><span class="mi">00</span><span class="s s-Atom">:</span><span class="mi">01</span>  <span class="mi">0</span><span class="s s-Atom">:</span><span class="mi">00</span><span class="s s-Atom">:</span><span class="mi">01</span> <span class="s s-Atom">--:--:--</span> <span class="mi">8034</span><span class="s s-Atom">k</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="err">!</span><span class="n">ls</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span>Azure Notebooks - Welcome.ipynb               README.html
+Creation and Deployment of an Azure ML Web Service.ipynb  mydatafile.csv
+Discover Sentiments in Tweets.ipynb           notebook.tex
+FSharp for Azure Notebooks.ipynb              oil_price.csv
+Getting to your Data in Azure Notebooks.ipynb         output_17_0.png
+Introduction to Python.ipynb                  shell.log
+Introduction to R.ipynb
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+
+<span class="n">dirname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+
+<span class="n">mydata</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;mydatafile.csv&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">mydata</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1"># use 10000 for testing</span>
+<span class="n">mydata</span> <span class="o">=</span> <span class="n">mydata</span><span class="p">[:</span><span class="mi">10000</span><span class="p">]</span> 
+<span class="n">mydata</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span>(160000, 2)
+</pre></div>
+
+
+<div>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>sentiment_label</th>
+      <th>tweet_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4</td>
+      <td>@elephantbird Hey dear, Happy Friday to You  A...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>4</td>
+      <td>Ughhh layin downnnn    Waiting for zeina to co...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>@greeniebach I reckon he'll play, even if he's...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>@vaLewee I know!  Saw it on the news!</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>very sad that http://www.fabchannel.com/ has c...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Before doing analysis, we can clean up the text by: 1) removing the twitter handle, 2) removing numbers, and 3) changing to lower case.</p>
+<div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+
+<span class="c1">#%% clean data</span>
+<span class="k">def</span> <span class="nf">clean_text</span><span class="p">(</span><span class="n">mystring</span><span class="p">):</span> 
+    <span class="n">mystring</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;@\w+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">mystring</span><span class="p">)</span> <span class="c1">#remove twitter handle</span>
+    <span class="n">mystring</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">mystring</span><span class="p">)</span> <span class="c1"># remove numbers  </span>
+    <span class="n">mystring</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;_+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">mystring</span><span class="p">)</span> <span class="c1"># remove consecutive underscores</span>
+    <span class="n">mystring</span> <span class="o">=</span> <span class="n">mystring</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="c1"># tranform to lower case    </span>
+
+    <span class="k">return</span> <span class="n">mystring</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="n">mydata</span><span class="p">[</span><span class="s2">&quot;tweet_text_cleaned&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mydata</span><span class="o">.</span><span class="n">tweet_text</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
+</pre></div>
+
+<p>Then we can tokenize the text data using the following line of code.</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">RegexpTokenizer</span>
+<span class="n">preprocessed</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">RegexpTokenizer</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\w+&#39;</span><span class="p">)</span><span class="o">.</span>\
+                         <span class="n">tokenize</span><span class="p">(</span><span class="n">mydata</span><span class="o">.</span><span class="n">tweet_text_cleaned</span><span class="p">[</span><span class="n">idx</span><span class="p">]))</span> \
+                <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">mydata</span><span class="o">.</span><span class="n">index</span><span class="p">]</span>
+</pre></div>
+
+<h2 id="3-identify-topics">3 Identify Topics</h2>
+<h3 id="31-calculate-tf-idf-matrix">3.1 Calculate tf-idf matrix</h3>
+<p>In order to use non-negative matrix factorization, we'll first calculate the tf-idf (term frequency-inverse document frequency) matrix. The value of tf-idf reflects the number times a word appears in the <em>document</em> after adjusting for the frequency of the word in the <em>corpus</em>. </p>
+<p>When calculating the tf-idf matrix, we can filter out words like "being" and "for" which are called stop words. In the following we filter out the stop words as defined by the <a href="http://scikit-learn.org/stable/">scikit-learn</a> package. You can expand the list of stop words by adding your own stop words to the "custom_stop_words" variable.</p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="kn">import</span> <span class="n">text</span> 
+
+<span class="n">custom_stop_words</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">my_stop_words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">ENGLISH_STOP_WORDS</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">custom_stop_words</span><span class="p">)</span>
+
+<span class="n">vectorizer</span> <span class="o">=</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">min_df</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ngram_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span> 
+                             <span class="n">stop_words</span> <span class="o">=</span> <span class="n">my_stop_words</span><span class="p">)</span>
+
+<span class="n">tfidf</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">preprocessed</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Created document-term matrix of size {} x {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="n">tfidf</span><span class="o">.</span><span class="n">shape</span><span class="p">[:</span><span class="mi">2</span><span class="p">]))</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span>Created document-term matrix of size 10000 x 13379
+</pre></div>
+
+
+<h3 id="32-nmf-analysis">3.2 NMF Analysis</h3>
+<p>If we use <strong>X</strong> to represent a <strong>document-word</strong> matrix with tf-idf values, non-negative matrix factorization factorizes the matrix into two matrices <strong>W</strong> and <strong>H</strong>, representing <strong>document-topic</strong> and <strong>topic-word</strong> matrices, respectively, as shown in the <a href="https://cloud.githubusercontent.com/assets/9322661/18445719/ea601214-78ec-11e6-9858-b29d62e29c9e.png">following figure</a>. The matrix <strong>W</strong> allows us to compare texts and determine which ones are similar. The matrix <strong>H</strong> tells us the top words in any given topic and we can use visualization to better undertand the topics. </p>
+<p>For any new text represented by <strong>X_new</strong>, we can make predictions in the sense that the <strong>W_new</strong> value can be computed from the <strong>H</strong> matrix.</p>
+<p>Other topic finding models (e.g., Latent Dirichlet Allocation (LDA)) are also available in the <a href="http://scikit-learn.org/stable/">scikit-learn</a> package but are not covered here. Compared with LDA, NMF has cheaper computation cost and is a good choice for short text analysis.  </p>
+<p><a href="https://cloud.githubusercontent.com/assets/9322661/18445719/ea601214-78ec-11e6-9858-b29d62e29c9e.png"><img alt="Figure 1" src="https://cloud.githubusercontent.com/assets/9322661/18445719/ea601214-78ec-11e6-9858-b29d62e29c9e.png" /></a> </p>
+<p>Now we can use NMF on the derived tf-idf matrix. We specify the number of topics to be 3. </p>
+<div class="codehilite"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">decomposition</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">nmf</span> <span class="o">=</span> <span class="n">decomposition</span><span class="o">.</span><span class="n">NMF</span><span class="p">(</span><span class="n">init</span> <span class="o">=</span> <span class="s1">&#39;nndsvd&#39;</span><span class="p">,</span> <span class="n">n_components</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">max_iter</span> <span class="o">=</span> <span class="mi">200</span><span class="p">)</span>
+<span class="n">W</span> <span class="o">=</span> <span class="n">nmf</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">tfidf</span><span class="p">)</span>
+<span class="n">H</span> <span class="o">=</span> <span class="n">nmf</span><span class="o">.</span><span class="n">components_</span>
+<span class="k">print</span><span class="p">(</span><span class="s2">&quot;Generated factor W of size {} and factor H of size {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">W</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">H</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
+
+<span class="n">feature_names</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
+
+<span class="n">n_top_words</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1">#%% print top words in each topic</span>
+<span class="k">for</span> <span class="n">topic_idx</span><span class="p">,</span> <span class="n">topic</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">H</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Topic #{}:&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">topic_idx</span><span class="p">))</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">feature_names</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">topic</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[:</span><span class="o">-</span><span class="n">n_top_words</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]]))</span>
+    <span class="k">print</span><span class="p">()</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span>Generated factor W of size (10000, 3) and factor H of size (3, 13379)
+Topic #0:
+good day work just today morning going like night really
+
+Topic #1:
+quot love http just com know amp new like best
+
+Topic #2:
+thanks following ff lol got haha great hey hope follow
+</pre></div>
+
+
+<h2 id="4-visualize-topics-with-word-cloud">4 Visualize Topics with Word Cloud</h2>
+<h3 id="41-install-wordcloud-package">4.1 Install wordcloud package</h3>
+<p>To better communicate the topics found, we can use the <a href="https://github.com/amueller/word_cloud">wordcloud</a> package. Since this package is not pre-installed, we need to install it here. The command for installing packages in Azure ML notebooks is "!pip install packagename".</p>
+<div class="codehilite"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span>
+<span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">wordcloud</span><span class="o">~=</span><span class="mf">1.2</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+
+<div class="codehilite"><pre><span></span>Requirement already up-to-date: pip in /home/nbuser/anaconda3_420/lib/python3.5/site-packages
+Collecting wordcloud~=1.2.1
+  Downloading wordcloud-1.2.1.tar.gz (165kB)
+[K    100% |################################| 174kB 3.4MB/s ta 0:00:01
+[?25hBuilding wheels for collected packages: wordcloud
+  Running setup.py bdist_wheel for wordcloud ... [?25ldone
+[?25h  Stored in directory: /home/nbuser/.cache/pip/wheels/29/9a/a9/86dcbbd5a7b6ace25887e4351a0136ea6dfcc0dd7de0a51357
+Successfully built wordcloud
+Installing collected packages: wordcloud
+Successfully installed wordcloud-1.2.1
+</pre></div>
+
+
+<h3 id="42-prepare-topics-for-wordcloud">4.2 Prepare topics for wordcloud</h3>
+<p>The following code saves the topics into separate sorted lists. </p>
+<div class="codehilite"><pre><span></span><span class="c1">#%% create pandas dataframe for the topics</span>
+<span class="n">mydf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;feature_name&quot;</span><span class="p">:</span> <span class="n">feature_names</span><span class="p">})</span>
+
+<span class="k">for</span> <span class="n">topic_idx</span><span class="p">,</span> <span class="n">topic</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">H</span><span class="p">):</span>
+    <span class="n">mydf</span><span class="p">[</span><span class="s2">&quot;topic_{}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">topic_idx</span><span class="p">)]</span> <span class="o">=</span> <span class="n">topic</span>
+
+<span class="n">mylist</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">mydf</span><span class="o">.</span><span class="n">itertuples</span><span class="p">())</span>
+
+<span class="n">mywords_topic1</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">mywords_topic2</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">mywords_topic3</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">order_id</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">,</span> <span class="n">num3</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">:</span>
+    <span class="n">mywords_topic1</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">key</span><span class="p">,</span> <span class="n">num1</span><span class="p">))</span>
+    <span class="n">mywords_topic2</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">key</span><span class="p">,</span> <span class="n">num2</span><span class="p">))</span>
+    <span class="n">mywords_topic3</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">key</span><span class="p">,</span> <span class="n">num3</span><span class="p">))</span>
+
+<span class="n">mywords_topic1</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">mywords_topic1</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">myword</span><span class="p">:</span> \
+                        <span class="n">myword</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">mywords_topic2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">mywords_topic2</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">myword</span><span class="p">:</span> \
+                        <span class="n">myword</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">mywords_topic3</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">mywords_topic3</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">myword</span><span class="p">:</span> \
+                        <span class="n">myword</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+
+<h3 id="43-visualize-topics">4.3 Visualize topics</h3>
+<p>The code below generates wordcloud for the 3 topics we identified from NMF. Larger fonts indicate higher weights of the words in a topic and the colors are randomly assigned. Compared with a simple list, from a word cloud we can better understand the relative frequency of all the words. </p>
+<div class="codehilite"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="kn">from</span> <span class="nn">wordcloud</span> <span class="kn">import</span> <span class="n">WordCloud</span> 
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+
+<span class="k">def</span> <span class="nf">wdc</span><span class="p">(</span><span class="o">*</span><span class="n">mywords_topic</span><span class="p">):</span>
+    <span class="n">n_row</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">mywords_topic</span><span class="p">)</span>
+    <span class="n">n_col</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="n">n_col</span> <span class="o">*</span> <span class="mi">3</span> <span class="o">*</span> <span class="mf">1.618</span><span class="p">,</span> <span class="n">n_row</span> <span class="o">*</span> <span class="mi">3</span><span class="p">))</span>    
+    <span class="n">wordcloud</span> <span class="o">=</span> <span class="n">WordCloud</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">mywords_topic</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">wordcloud</span><span class="o">.</span><span class="n">fit_words</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">n_row</span><span class="p">,</span> <span class="n">n_col</span><span class="p">,</span> <span class="n">index</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Topic {}&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">index</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wordcloud</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s2">&quot;off&quot;</span><span class="p">)</span>
+
+<span class="n">wdc</span><span class="p">(</span><span class="n">mywords_topic1</span><span class="p">,</span> <span class="n">mywords_topic2</span><span class="p">,</span> <span class="n">mywords_topic3</span><span class="p">)</span>
+</pre></div>
+
+<p><img alt="png" src="../output_17_0.png" /></p>
+<h2 id="5-discussion">5 Discussion</h2>
+<p>For any new tweet, we first calculate its tf-idf matrix (<strong>X</strong>) and then calculate its <strong>W</strong> matrix. This will then allow us to assign the new tweet to a segment and predict its sentiment (e.g. positive sentiment vs negative sentiment on a product).</p>
+<p>The following code shows how to calcuate the W matrix for new tweets that have been cleaned beforehand. For illustration purpose, these 5 tweets are the first 5 from the corpus used in the analysis.  </p>
+<div class="codehilite"><pre><span></span><span class="c1"># prediction example</span>
+<span class="n">text_new</span> <span class="o">=</span> <span class="n">preprocessed</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">tfidf_new</span> <span class="o">=</span> <span class="n">vectorizer</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">text_new</span><span class="p">)</span>
+<span class="n">W_new</span> <span class="o">=</span> <span class="n">nmf</span><span class="o">.</span><span class="n">transform</span><span class="p">(</span><span class="n">tfidf_new</span><span class="p">)</span>
+</pre></div>
+
+<hr />
+<p>Created by a Microsoft Employee.<br />
+Copyright (C) Microsoft. All Rights Reserved.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../.." title="Markdown reference" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Markdown reference
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../topic_1/" title="Topic 1" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Topic 1
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.a59e2a89.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+    
+      
+    
+  </body>
+</html>

@@ -1,0 +1,13 @@
+-i https://pypi.org/simple
+click==6.7
+jinja2==2.10
+livereload==2.5.2
+markdown==2.6.11
+markupsafe==1.0
+mkdocs-material==2.9.2
+mkdocs==0.17.2
+pygments==2.2.0
+pymdown-extensions==4.11
+pyyaml==3.13
+six==1.11.0
+tornado==4.5.3

@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Markdown reference\n\n\nStandard stuff\n\n\nStandard\n \nmarkdown\n stuff\n\n\nfor\n \ni\n \nin\n \nrange\n \n(\n1\n,\n100\n):\n\n    \nprint\n(\n\"Syntax highlighting\"\n)\n\n\n\n\n\nNotes etc.\n\n\n\n\nNote\n\n\nThis is a note\n\n\n\n\n\n\nBug\n\n\nThis is a bug\n\n\n\n\n\n\nInfo\n\n\nThese work for:\n\n\n\n\nNote\n\n\nAbstract\n\n\nInfo\n\n\nTip\n\n\nSuccess\n\n\nQuestion\n\n\nWarning\n\n\nFailure\n\n\nDanger\n\n\nBug\n\n\nExample\n\n\nQuote\n\n\n\n\n\n\nClicky boi:\n\n\nWhat is the answer to life the universe and everything?\n42\nMaths\n\n\n\n\n\nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.\n\n\n\n\nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.\n\n\n\n\n\nOther stuff\n\n\n\n\nEmojis \n\n\nInline highlighting for \nprint\n(\n\"code\"\n)\n\n\nAuto adding of \nhttps://www.google.co.uk/search?q=links\n\n\nHighlighting of \nimportant\n stuff\n\n\nUseful arrows and stuff \u2192 \u00b1\n\n\nTasks:\n\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit\n\n\n Nulla lobortis egestas semper\n\n\n Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n\n\n Vestibulum convallis sit amet nisi a tincidunt\n\n\n In hac habitasse platea dictumst\n\n\n In scelerisque nibh non dolor mollis congue sed et metus\n\n\n Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n\n\n Praesent sed risus massa\n\n\n\n\n\n\n Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n\n\n Nulla vel eros venenatis, imperdiet enim id, faucibus nisi\n\n\n\n\n\n\n\n\nInstallation\n\n\nClone:\n\ngit clone ...\n\n\nInstall:\n\npipenv install\n\n\nLive reload:\n\npipenv run mkdocs serve\n\n\nBuild:\n\npipenv run mkdocs build\n\n\nDeploy:\n\npipenv run mkdocs gh-deploy",
+            "text": "Markdown reference\n\n\nStandard stuff\n\n\nStandard\n \nmarkdown\n stuff\n\n\nfor\n \ni\n \nin\n \nrange\n \n(\n1\n,\n100\n):\n\n    \nprint\n(\n\"Syntax highlighting\"\n)\n\n    \nprint\n(\n\"George was here\"\n)\n\n\n\n\n\nNotes etc.\n\n\n\n\nNote\n\n\nThis is a note\n\n\n\n\n\n\nBug\n\n\nThis is a bug\n\n\n\n\n\n\nInfo\n\n\nThese work for:\n\n\n\n\nNote\n\n\nAbstract\n\n\nInfo\n\n\nTip\n\n\nSuccess\n\n\nQuestion\n\n\nWarning\n\n\nFailure\n\n\nDanger\n\n\nBug\n\n\nExample\n\n\nQuote\n\n\n\n\n\n\nClicky boi:\n\n\nWhat is the answer to life the universe and everything?\n42\nMaths\n\n\n\n\n\nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.\n\n\n\n\nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.\n\n\n\n\n\nOther stuff\n\n\n\n\nEmojis \n\n\nInline highlighting for \nprint\n(\n\"code\"\n)\n\n\nAuto adding of \nhttps://www.google.co.uk/search?q=links\n\n\nHighlighting of \nimportant\n stuff\n\n\nUseful arrows and stuff \u2192 \u00b1\n\n\nTasks:\n\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit\n\n\n Nulla lobortis egestas semper\n\n\n Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n\n\n Vestibulum convallis sit amet nisi a tincidunt\n\n\n In hac habitasse platea dictumst\n\n\n In scelerisque nibh non dolor mollis congue sed et metus\n\n\n Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n\n\n Praesent sed risus massa\n\n\n\n\n\n\n Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n\n\n Nulla vel eros venenatis, imperdiet enim id, faucibus nisi\n\n\n\n\n\n\n\n\nInstallation\n\n\nClone:\n\ngit clone ...\n\n\nInstall:\n\npipenv install\n\n\nLive reload:\n\npipenv run mkdocs serve\n\n\nBuild:\n\npipenv run mkdocs build\n\n\nDeploy:\n\npipenv run mkdocs gh-deploy",
             "title": "Markdown reference"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "location": "/#standard-stuff",
-            "text": "Standard   markdown  stuff  for   i   in   range   ( 1 , 100 ): \n     print ( \"Syntax highlighting\" )",
+            "text": "Standard   markdown  stuff  for   i   in   range   ( 1 , 100 ): \n     print ( \"Syntax highlighting\" ) \n     print ( \"George was here\" )",
             "title": "Standard stuff"
         },
         {
@@ -36,44 +36,249 @@
             "title": "Installation"
         },
         {
-            "location": "/Module_1/topic_1/",
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/",
+            "text": "1 Introduction\n\n\nSentiment analysis is commonly used in marketing and customer service to answer questions such as \"Is a product review positive or negative?\" and \"How are customers responding to a product release?\" etc. \n\n\nTopic modeling discovers the abstract \"topics\" in a corpus of texts. The results from topic modeling analysis can be used in sentiment analysis. For example, they can be used to split texts into different subsets and allow us to train a separate sentiment model for each of the subsets. Training separate sentiment models for different subsets can lead to more accurate predictions than using a single model for all the texts. \n\n\nThe purpose of this notebook is to illustrate how to discover and visualize topics from a corpus of Twitter tweets using Jupyter notebook. \n\n\n2 Data\n\n\n2.1 Data Source\n\n\nThe dataset used in his example is based on the \nSentiment140\n dataset. The Sentiment140 dataset has approximately 1,600,000 automatically annotated tweets and 6 fields for each tweet. For illustration purpose, a sample of the Sentiment140 dataset will be used. This sample has 160,000 tweets and two fields for each tweet - the polarity of the tweet and the text of the tweet. The sample dataset is located \nhere\n. \n\n\nDownload this dataset by running the following command\n\n\n!curl -L -o mydatafile.csv http://azuremlsamples.azureml.net/templatedata/Text%20-%20Input.csv\n\n\n\n\n\n\nAfter downloading the dataset, upload it to OneDrive or Dropbox as \"mydatafile.csv\" and import it into this notebook using the \"Data\" menu. \n\n\n2.2 Read and Prepare Data\n\n\nThe following lines of code read the data from my blob storage into the current session.\n\n\n!\ncurl\n \n-\nL\n \n-\no\n \nmydatafile\n.\ncsv\n \nhttp\n:\n//\nazuremlsamples\n.\nazureml\n.\nnet\n/\ntemplatedata\n/\nText\n%\n20\n-%\n20\nInput\n.\ncsv\n\n\n\n\n\n  \n% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n\n                                 \nDload\n  \nUpload\n   \nTotal\n   \nSpent\n    \nLeft\n  \nSpeed\n\n\n100\n \n11.8\nM\n  \n100\n \n11.8\nM\n    \n0\n     \n0\n  \n8031\nk\n      \n0\n  \n0\n:\n00\n:\n01\n  \n0\n:\n00\n:\n01\n \n--:--:--\n \n8034\nk\n\n\n\n\n\n\n!\nls\n\n\n\n\n\nAzure Notebooks - Welcome.ipynb               README.html\nCreation and Deployment of an Azure ML Web Service.ipynb  mydatafile.csv\nDiscover Sentiments in Tweets.ipynb           notebook.tex\nFSharp for Azure Notebooks.ipynb              oil_price.csv\nGetting to your Data in Azure Notebooks.ipynb         output_17_0.png\nIntroduction to Python.ipynb                  shell.log\nIntroduction to R.ipynb\n\n\n\n\n\nimport\n \nos\n\n\nimport\n \npandas\n \nas\n \npd\n\n\n\ndirname\n \n=\n \nos\n.\ngetcwd\n()\n\n\n\nmydata\n \n=\n \npd\n.\nread_csv\n(\n\"mydatafile.csv\"\n,\n \nheader\n=\n0\n)\n\n\nprint\n(\nmydata\n.\nshape\n)\n\n\n\n# use 10000 for testing\n\n\nmydata\n \n=\n \nmydata\n[:\n10000\n]\n \n\nmydata\n.\nhead\n()\n\n\n\n\n\n(160000, 2)\n\n\n\n\n\n\n\n\n  \n\n    \n\n      \n\n      \nsentiment_label\n\n      \ntweet_text\n\n    \n\n  \n\n  \n\n    \n\n      \n0\n\n      \n4\n\n      \n@elephantbird Hey dear, Happy Friday to You  A...\n\n    \n\n    \n\n      \n1\n\n      \n4\n\n      \nUghhh layin downnnn    Waiting for zeina to co...\n\n    \n\n    \n\n      \n2\n\n      \n0\n\n      \n@greeniebach I reckon he'll play, even if he's...\n\n    \n\n    \n\n      \n3\n\n      \n0\n\n      \n@vaLewee I know!  Saw it on the news!\n\n    \n\n    \n\n      \n4\n\n      \n0\n\n      \nvery sad that http://www.fabchannel.com/ has c...\n\n    \n\n  \n\n\n\n\n\n\n\nBefore doing analysis, we can clean up the text by: 1) removing the twitter handle, 2) removing numbers, and 3) changing to lower case.\n\n\nimport\n \nre\n\n\n\n#%% clean data\n\n\ndef\n \nclean_text\n(\nmystring\n):\n \n    \nmystring\n \n=\n \nre\n.\nsub\n(\nr\n\"@\\w+\"\n,\n \n\"\"\n,\n \nmystring\n)\n \n#remove twitter handle\n\n    \nmystring\n \n=\n \nre\n.\nsub\n(\nr\n\"\\d\"\n,\n \n\"\"\n,\n \nmystring\n)\n \n# remove numbers  \n\n    \nmystring\n \n=\n \nre\n.\nsub\n(\nr\n\"_+\"\n,\n \n\"\"\n,\n \nmystring\n)\n \n# remove consecutive underscores\n\n    \nmystring\n \n=\n \nmystring\n.\nlower\n()\n \n# tranform to lower case    \n\n\n    \nreturn\n \nmystring\n.\nstrip\n()\n\n\n\nmydata\n[\n\"tweet_text_cleaned\"\n]\n \n=\n \nmydata\n.\ntweet_text\n.\napply\n(\nclean_text\n)\n\n\n\n\n\nThen we can tokenize the text data using the following line of code.\n\n\nfrom\n \nnltk.tokenize\n \nimport\n \nRegexpTokenizer\n\n\npreprocessed\n \n=\n \n[\n\" \"\n.\njoin\n(\nRegexpTokenizer\n(\nr\n'\\w+'\n)\n.\n\\\n                         \ntokenize\n(\nmydata\n.\ntweet_text_cleaned\n[\nidx\n]))\n \\\n                \nfor\n \nidx\n \nin\n \nmydata\n.\nindex\n]\n\n\n\n\n\n3 Identify Topics\n\n\n3.1 Calculate tf-idf matrix\n\n\nIn order to use non-negative matrix factorization, we'll first calculate the tf-idf (term frequency-inverse document frequency) matrix. The value of tf-idf reflects the number times a word appears in the \ndocument\n after adjusting for the frequency of the word in the \ncorpus\n. \n\n\nWhen calculating the tf-idf matrix, we can filter out words like \"being\" and \"for\" which are called stop words. In the following we filter out the stop words as defined by the \nscikit-learn\n package. You can expand the list of stop words by adding your own stop words to the \"custom_stop_words\" variable.\n\n\nfrom\n \nsklearn.feature_extraction.text\n \nimport\n \nTfidfVectorizer\n\n\nfrom\n \nsklearn.feature_extraction\n \nimport\n \ntext\n \n\n\ncustom_stop_words\n \n=\n \n[]\n\n\nmy_stop_words\n \n=\n \ntext\n.\nENGLISH_STOP_WORDS\n.\nunion\n(\ncustom_stop_words\n)\n\n\n\nvectorizer\n \n=\n \nTfidfVectorizer\n(\nmin_df\n \n=\n \n1\n,\n \nngram_range\n \n=\n \n(\n1\n,\n1\n),\n \n                             \nstop_words\n \n=\n \nmy_stop_words\n)\n\n\n\ntfidf\n \n=\n \nvectorizer\n.\nfit_transform\n(\npreprocessed\n)\n\n\nprint\n(\n\"Created document-term matrix of size {} x {}\"\n.\nformat\n(\n*\ntfidf\n.\nshape\n[:\n2\n]))\n\n\n\n\n\nCreated document-term matrix of size 10000 x 13379\n\n\n\n\n\n3.2 NMF Analysis\n\n\nIf we use \nX\n to represent a \ndocument-word\n matrix with tf-idf values, non-negative matrix factorization factorizes the matrix into two matrices \nW\n and \nH\n, representing \ndocument-topic\n and \ntopic-word\n matrices, respectively, as shown in the \nfollowing figure\n. The matrix \nW\n allows us to compare texts and determine which ones are similar. The matrix \nH\n tells us the top words in any given topic and we can use visualization to better undertand the topics. \n\n\nFor any new text represented by \nX_new\n, we can make predictions in the sense that the \nW_new\n value can be computed from the \nH\n matrix.\n\n\nOther topic finding models (e.g., Latent Dirichlet Allocation (LDA)) are also available in the \nscikit-learn\n package but are not covered here. Compared with LDA, NMF has cheaper computation cost and is a good choice for short text analysis.  \n\n\n \n\n\nNow we can use NMF on the derived tf-idf matrix. We specify the number of topics to be 3. \n\n\nfrom\n \nsklearn\n \nimport\n \ndecomposition\n\n\nimport\n \nnumpy\n \nas\n \nnp\n\n\nnmf\n \n=\n \ndecomposition\n.\nNMF\n(\ninit\n \n=\n \n'nndsvd'\n,\n \nn_components\n \n=\n \n3\n,\n \nmax_iter\n \n=\n \n200\n)\n\n\nW\n \n=\n \nnmf\n.\nfit_transform\n(\ntfidf\n)\n\n\nH\n \n=\n \nnmf\n.\ncomponents_\n\n\nprint\n(\n\"Generated factor W of size {} and factor H of size {}\"\n.\nformat\n(\nW\n.\nshape\n,\n \nH\n.\nshape\n))\n\n\n\nfeature_names\n \n=\n \nvectorizer\n.\nget_feature_names\n()\n\n\n\nn_top_words\n \n=\n \n10\n\n\n\n#%% print top words in each topic\n\n\nfor\n \ntopic_idx\n,\n \ntopic\n \nin\n \nenumerate\n(\nH\n):\n\n    \nprint\n(\n\"Topic #{}:\"\n.\nformat\n(\ntopic_idx\n))\n\n    \nprint\n(\n\" \"\n.\njoin\n([\nfeature_names\n[\ni\n]\n\n                    \nfor\n \ni\n \nin\n \ntopic\n.\nargsort\n()[:\n-\nn_top_words\n \n-\n \n1\n:\n-\n1\n]]))\n\n    \nprint\n()\n\n\n\n\n\nGenerated factor W of size (10000, 3) and factor H of size (3, 13379)\nTopic #0:\ngood day work just today morning going like night really\n\nTopic #1:\nquot love http just com know amp new like best\n\nTopic #2:\nthanks following ff lol got haha great hey hope follow\n\n\n\n\n\n4 Visualize Topics with Word Cloud\n\n\n4.1 Install wordcloud package\n\n\nTo better communicate the topics found, we can use the \nwordcloud\n package. Since this package is not pre-installed, we need to install it here. The command for installing packages in Azure ML notebooks is \"!pip install packagename\".\n\n\n!\npip\n \ninstall\n \n--\nupgrade\n \npip\n\n\n!\npip\n \ninstall\n \nwordcloud\n~=\n1.2\n.\n1\n\n\n\n\n\nRequirement already up-to-date: pip in /home/nbuser/anaconda3_420/lib/python3.5/site-packages\nCollecting wordcloud~=1.2.1\n  Downloading wordcloud-1.2.1.tar.gz (165kB)\n\u001b[K    100% |################################| 174kB 3.4MB/s ta 0:00:01\n\u001b[?25hBuilding wheels for collected packages: wordcloud\n  Running setup.py bdist_wheel for wordcloud ... \u001b[?25ldone\n\u001b[?25h  Stored in directory: /home/nbuser/.cache/pip/wheels/29/9a/a9/86dcbbd5a7b6ace25887e4351a0136ea6dfcc0dd7de0a51357\nSuccessfully built wordcloud\nInstalling collected packages: wordcloud\nSuccessfully installed wordcloud-1.2.1\n\n\n\n\n\n4.2 Prepare topics for wordcloud\n\n\nThe following code saves the topics into separate sorted lists. \n\n\n#%% create pandas dataframe for the topics\n\n\nmydf\n \n=\n \npd\n.\nDataFrame\n({\n\"feature_name\"\n:\n \nfeature_names\n})\n\n\n\nfor\n \ntopic_idx\n,\n \ntopic\n \nin\n \nenumerate\n(\nH\n):\n\n    \nmydf\n[\n\"topic_{}\"\n.\nformat\n(\ntopic_idx\n)]\n \n=\n \ntopic\n\n\n\nmylist\n \n=\n \nlist\n(\nmydf\n.\nitertuples\n())\n\n\n\nmywords_topic1\n \n=\n \n[]\n\n\nmywords_topic2\n \n=\n \n[]\n\n\nmywords_topic3\n \n=\n \n[]\n\n\nfor\n \norder_id\n,\n \nkey\n,\n \nnum1\n,\n \nnum2\n,\n \nnum3\n \nin\n \nmylist\n:\n\n    \nmywords_topic1\n.\nappend\n((\nkey\n,\n \nnum1\n))\n\n    \nmywords_topic2\n.\nappend\n((\nkey\n,\n \nnum2\n))\n\n    \nmywords_topic3\n.\nappend\n((\nkey\n,\n \nnum3\n))\n\n\n\nmywords_topic1\n \n=\n \nsorted\n(\nmywords_topic1\n,\n \nkey\n=\nlambda\n \nmyword\n:\n \\\n                        \nmyword\n[\n1\n],\n \nreverse\n=\nTrue\n)\n\n\nmywords_topic2\n \n=\n \nsorted\n(\nmywords_topic2\n,\n \nkey\n=\nlambda\n \nmyword\n:\n \\\n                        \nmyword\n[\n1\n],\n \nreverse\n=\nTrue\n)\n\n\nmywords_topic3\n \n=\n \nsorted\n(\nmywords_topic3\n,\n \nkey\n=\nlambda\n \nmyword\n:\n \\\n                        \nmyword\n[\n1\n],\n \nreverse\n=\nTrue\n)\n\n\n\n\n\n4.3 Visualize topics\n\n\nThe code below generates wordcloud for the 3 topics we identified from NMF. Larger fonts indicate higher weights of the words in a topic and the colors are randomly assigned. Compared with a simple list, from a word cloud we can better understand the relative frequency of all the words. \n\n\n%\nmatplotlib\n \ninline\n\n\n\nfrom\n \nwordcloud\n \nimport\n \nWordCloud\n \n\nimport\n \nmatplotlib.pyplot\n \nas\n \nplt\n\n\n\ndef\n \nwdc\n(\n*\nmywords_topic\n):\n\n    \nn_row\n \n=\n \nlen\n(\nmywords_topic\n)\n\n    \nn_col\n \n=\n \n1\n\n    \nplt\n.\nfigure\n(\nfigsize\n=\n(\nn_col\n \n*\n \n3\n \n*\n \n1.618\n,\n \nn_row\n \n*\n \n3\n))\n    \n    \nwordcloud\n \n=\n \nWordCloud\n()\n\n    \nfor\n \nindex\n,\n \nitem\n \nin\n \nenumerate\n(\nmywords_topic\n,\n \nstart\n=\n1\n):\n\n        \nwordcloud\n.\nfit_words\n(\nitem\n)\n\n        \nplt\n.\nsubplot\n(\nn_row\n,\n \nn_col\n,\n \nindex\n)\n\n        \nplt\n.\ntitle\n(\n'Topic {}'\n.\nformat\n(\nindex\n),\n \nsize\n=\n16\n)\n\n        \nplt\n.\nimshow\n(\nwordcloud\n)\n\n        \nplt\n.\naxis\n(\n\"off\"\n)\n\n\n\nwdc\n(\nmywords_topic1\n,\n \nmywords_topic2\n,\n \nmywords_topic3\n)\n\n\n\n\n\n\n\n5 Discussion\n\n\nFor any new tweet, we first calculate its tf-idf matrix (\nX\n) and then calculate its \nW\n matrix. This will then allow us to assign the new tweet to a segment and predict its sentiment (e.g. positive sentiment vs negative sentiment on a product).\n\n\nThe following code shows how to calcuate the W matrix for new tweets that have been cleaned beforehand. For illustration purpose, these 5 tweets are the first 5 from the corpus used in the analysis.  \n\n\n# prediction example\n\n\ntext_new\n \n=\n \npreprocessed\n[\n0\n:\n5\n]\n\n\ntfidf_new\n \n=\n \nvectorizer\n.\ntransform\n(\ntext_new\n)\n\n\nW_new\n \n=\n \nnmf\n.\ntransform\n(\ntfidf_new\n)\n\n\n\n\n\n\n\nCreated by a Microsoft Employee.\n\nCopyright (C) Microsoft. All Rights Reserved.",
+            "title": "Discover Sentiments in Tweets"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#1-introduction",
+            "text": "Sentiment analysis is commonly used in marketing and customer service to answer questions such as \"Is a product review positive or negative?\" and \"How are customers responding to a product release?\" etc.   Topic modeling discovers the abstract \"topics\" in a corpus of texts. The results from topic modeling analysis can be used in sentiment analysis. For example, they can be used to split texts into different subsets and allow us to train a separate sentiment model for each of the subsets. Training separate sentiment models for different subsets can lead to more accurate predictions than using a single model for all the texts.   The purpose of this notebook is to illustrate how to discover and visualize topics from a corpus of Twitter tweets using Jupyter notebook.",
+            "title": "1 Introduction"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#2-data",
+            "text": "",
+            "title": "2 Data"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#21-data-source",
+            "text": "The dataset used in his example is based on the  Sentiment140  dataset. The Sentiment140 dataset has approximately 1,600,000 automatically annotated tweets and 6 fields for each tweet. For illustration purpose, a sample of the Sentiment140 dataset will be used. This sample has 160,000 tweets and two fields for each tweet - the polarity of the tweet and the text of the tweet. The sample dataset is located  here .   Download this dataset by running the following command  !curl -L -o mydatafile.csv http://azuremlsamples.azureml.net/templatedata/Text%20-%20Input.csv   After downloading the dataset, upload it to OneDrive or Dropbox as \"mydatafile.csv\" and import it into this notebook using the \"Data\" menu.",
+            "title": "2.1 Data Source"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#22-read-and-prepare-data",
+            "text": "The following lines of code read the data from my blob storage into the current session.  ! curl   - L   - o   mydatafile . csv   http : // azuremlsamples . azureml . net / templatedata / Text % 20 -% 20 Input . csv      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current \n                                  Dload    Upload     Total     Spent      Left    Speed  100   11.8 M    100   11.8 M      0       0    8031 k        0    0 : 00 : 01    0 : 00 : 01   --:--:--   8034 k   ! ls   Azure Notebooks - Welcome.ipynb               README.html\nCreation and Deployment of an Azure ML Web Service.ipynb  mydatafile.csv\nDiscover Sentiments in Tweets.ipynb           notebook.tex\nFSharp for Azure Notebooks.ipynb              oil_price.csv\nGetting to your Data in Azure Notebooks.ipynb         output_17_0.png\nIntroduction to Python.ipynb                  shell.log\nIntroduction to R.ipynb  import   os  import   pandas   as   pd  dirname   =   os . getcwd ()  mydata   =   pd . read_csv ( \"mydatafile.csv\" ,   header = 0 )  print ( mydata . shape )  # use 10000 for testing  mydata   =   mydata [: 10000 ]   mydata . head ()   (160000, 2)   \n   \n     \n       \n       sentiment_label \n       tweet_text \n     \n   \n   \n     \n       0 \n       4 \n       @elephantbird Hey dear, Happy Friday to You  A... \n     \n     \n       1 \n       4 \n       Ughhh layin downnnn    Waiting for zeina to co... \n     \n     \n       2 \n       0 \n       @greeniebach I reckon he'll play, even if he's... \n     \n     \n       3 \n       0 \n       @vaLewee I know!  Saw it on the news! \n     \n     \n       4 \n       0 \n       very sad that http://www.fabchannel.com/ has c... \n     \n      Before doing analysis, we can clean up the text by: 1) removing the twitter handle, 2) removing numbers, and 3) changing to lower case.  import   re  #%% clean data  def   clean_text ( mystring ):  \n     mystring   =   re . sub ( r \"@\\w+\" ,   \"\" ,   mystring )   #remove twitter handle \n     mystring   =   re . sub ( r \"\\d\" ,   \"\" ,   mystring )   # remove numbers   \n     mystring   =   re . sub ( r \"_+\" ,   \"\" ,   mystring )   # remove consecutive underscores \n     mystring   =   mystring . lower ()   # tranform to lower case     \n\n     return   mystring . strip ()  mydata [ \"tweet_text_cleaned\" ]   =   mydata . tweet_text . apply ( clean_text )   Then we can tokenize the text data using the following line of code.  from   nltk.tokenize   import   RegexpTokenizer  preprocessed   =   [ \" \" . join ( RegexpTokenizer ( r '\\w+' ) . \\\n                          tokenize ( mydata . tweet_text_cleaned [ idx ]))  \\\n                 for   idx   in   mydata . index ]",
+            "title": "2.2 Read and Prepare Data"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#3-identify-topics",
+            "text": "",
+            "title": "3 Identify Topics"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#31-calculate-tf-idf-matrix",
+            "text": "In order to use non-negative matrix factorization, we'll first calculate the tf-idf (term frequency-inverse document frequency) matrix. The value of tf-idf reflects the number times a word appears in the  document  after adjusting for the frequency of the word in the  corpus .   When calculating the tf-idf matrix, we can filter out words like \"being\" and \"for\" which are called stop words. In the following we filter out the stop words as defined by the  scikit-learn  package. You can expand the list of stop words by adding your own stop words to the \"custom_stop_words\" variable.  from   sklearn.feature_extraction.text   import   TfidfVectorizer  from   sklearn.feature_extraction   import   text   custom_stop_words   =   []  my_stop_words   =   text . ENGLISH_STOP_WORDS . union ( custom_stop_words )  vectorizer   =   TfidfVectorizer ( min_df   =   1 ,   ngram_range   =   ( 1 , 1 ),  \n                              stop_words   =   my_stop_words )  tfidf   =   vectorizer . fit_transform ( preprocessed )  print ( \"Created document-term matrix of size {} x {}\" . format ( * tfidf . shape [: 2 ]))   Created document-term matrix of size 10000 x 13379",
+            "title": "3.1 Calculate tf-idf matrix"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#32-nmf-analysis",
+            "text": "If we use  X  to represent a  document-word  matrix with tf-idf values, non-negative matrix factorization factorizes the matrix into two matrices  W  and  H , representing  document-topic  and  topic-word  matrices, respectively, as shown in the  following figure . The matrix  W  allows us to compare texts and determine which ones are similar. The matrix  H  tells us the top words in any given topic and we can use visualization to better undertand the topics.   For any new text represented by  X_new , we can make predictions in the sense that the  W_new  value can be computed from the  H  matrix.  Other topic finding models (e.g., Latent Dirichlet Allocation (LDA)) are also available in the  scikit-learn  package but are not covered here. Compared with LDA, NMF has cheaper computation cost and is a good choice for short text analysis.       Now we can use NMF on the derived tf-idf matrix. We specify the number of topics to be 3.   from   sklearn   import   decomposition  import   numpy   as   np  nmf   =   decomposition . NMF ( init   =   'nndsvd' ,   n_components   =   3 ,   max_iter   =   200 )  W   =   nmf . fit_transform ( tfidf )  H   =   nmf . components_  print ( \"Generated factor W of size {} and factor H of size {}\" . format ( W . shape ,   H . shape ))  feature_names   =   vectorizer . get_feature_names ()  n_top_words   =   10  #%% print top words in each topic  for   topic_idx ,   topic   in   enumerate ( H ): \n     print ( \"Topic #{}:\" . format ( topic_idx )) \n     print ( \" \" . join ([ feature_names [ i ] \n                     for   i   in   topic . argsort ()[: - n_top_words   -   1 : - 1 ]])) \n     print ()   Generated factor W of size (10000, 3) and factor H of size (3, 13379)\nTopic #0:\ngood day work just today morning going like night really\n\nTopic #1:\nquot love http just com know amp new like best\n\nTopic #2:\nthanks following ff lol got haha great hey hope follow",
+            "title": "3.2 NMF Analysis"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#4-visualize-topics-with-word-cloud",
+            "text": "",
+            "title": "4 Visualize Topics with Word Cloud"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#41-install-wordcloud-package",
+            "text": "To better communicate the topics found, we can use the  wordcloud  package. Since this package is not pre-installed, we need to install it here. The command for installing packages in Azure ML notebooks is \"!pip install packagename\".  ! pip   install   -- upgrade   pip  ! pip   install   wordcloud ~= 1.2 . 1   Requirement already up-to-date: pip in /home/nbuser/anaconda3_420/lib/python3.5/site-packages\nCollecting wordcloud~=1.2.1\n  Downloading wordcloud-1.2.1.tar.gz (165kB)\n\u001b[K    100% |################################| 174kB 3.4MB/s ta 0:00:01\n\u001b[?25hBuilding wheels for collected packages: wordcloud\n  Running setup.py bdist_wheel for wordcloud ... \u001b[?25ldone\n\u001b[?25h  Stored in directory: /home/nbuser/.cache/pip/wheels/29/9a/a9/86dcbbd5a7b6ace25887e4351a0136ea6dfcc0dd7de0a51357\nSuccessfully built wordcloud\nInstalling collected packages: wordcloud\nSuccessfully installed wordcloud-1.2.1",
+            "title": "4.1 Install wordcloud package"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#42-prepare-topics-for-wordcloud",
+            "text": "The following code saves the topics into separate sorted lists.   #%% create pandas dataframe for the topics  mydf   =   pd . DataFrame ({ \"feature_name\" :   feature_names })  for   topic_idx ,   topic   in   enumerate ( H ): \n     mydf [ \"topic_{}\" . format ( topic_idx )]   =   topic  mylist   =   list ( mydf . itertuples ())  mywords_topic1   =   []  mywords_topic2   =   []  mywords_topic3   =   []  for   order_id ,   key ,   num1 ,   num2 ,   num3   in   mylist : \n     mywords_topic1 . append (( key ,   num1 )) \n     mywords_topic2 . append (( key ,   num2 )) \n     mywords_topic3 . append (( key ,   num3 ))  mywords_topic1   =   sorted ( mywords_topic1 ,   key = lambda   myword :  \\\n                         myword [ 1 ],   reverse = True )  mywords_topic2   =   sorted ( mywords_topic2 ,   key = lambda   myword :  \\\n                         myword [ 1 ],   reverse = True )  mywords_topic3   =   sorted ( mywords_topic3 ,   key = lambda   myword :  \\\n                         myword [ 1 ],   reverse = True )",
+            "title": "4.2 Prepare topics for wordcloud"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#43-visualize-topics",
+            "text": "The code below generates wordcloud for the 3 topics we identified from NMF. Larger fonts indicate higher weights of the words in a topic and the colors are randomly assigned. Compared with a simple list, from a word cloud we can better understand the relative frequency of all the words.   % matplotlib   inline  from   wordcloud   import   WordCloud   import   matplotlib.pyplot   as   plt  def   wdc ( * mywords_topic ): \n     n_row   =   len ( mywords_topic ) \n     n_col   =   1 \n     plt . figure ( figsize = ( n_col   *   3   *   1.618 ,   n_row   *   3 ))     \n     wordcloud   =   WordCloud () \n     for   index ,   item   in   enumerate ( mywords_topic ,   start = 1 ): \n         wordcloud . fit_words ( item ) \n         plt . subplot ( n_row ,   n_col ,   index ) \n         plt . title ( 'Topic {}' . format ( index ),   size = 16 ) \n         plt . imshow ( wordcloud ) \n         plt . axis ( \"off\" )  wdc ( mywords_topic1 ,   mywords_topic2 ,   mywords_topic3 )",
+            "title": "4.3 Visualize topics"
+        },
+        {
+            "location": "/Communication_Networks/Discover Sentiments in Tweets/#5-discussion",
+            "text": "For any new tweet, we first calculate its tf-idf matrix ( X ) and then calculate its  W  matrix. This will then allow us to assign the new tweet to a segment and predict its sentiment (e.g. positive sentiment vs negative sentiment on a product).  The following code shows how to calcuate the W matrix for new tweets that have been cleaned beforehand. For illustration purpose, these 5 tweets are the first 5 from the corpus used in the analysis.    # prediction example  text_new   =   preprocessed [ 0 : 5 ]  tfidf_new   =   vectorizer . transform ( text_new )  W_new   =   nmf . transform ( tfidf_new )    Created by a Microsoft Employee. \nCopyright (C) Microsoft. All Rights Reserved.",
+            "title": "5 Discussion"
+        },
+        {
+            "location": "/Communication_Networks/topic_1/",
             "text": "Test topic",
             "title": "Test topic"
         },
         {
-            "location": "/Module_1/topic_1/#test-topic",
+            "location": "/Communication_Networks/topic_1/#test-topic",
             "text": "",
             "title": "Test topic"
         },
         {
-            "location": "/Module_1/topic_2/",
+            "location": "/Communication_Networks/topic_2/",
             "text": "Another topic",
             "title": "Another topic"
         },
         {
-            "location": "/Module_1/topic_2/#another-topic",
+            "location": "/Communication_Networks/topic_2/#another-topic",
             "text": "",
             "title": "Another topic"
         },
         {
-            "location": "/Module_2/topic_1/",
+            "location": "/Computational_Mathematics/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Computational_Mathematics/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Computational_Mathematics/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Computational_Mathematics/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Database_Systems/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Database_Systems/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Database_Systems/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Database_Systems/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Enhancing_Your_Employability/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Enhancing_Your_Employability/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Enhancing_Your_Employability/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Enhancing_Your_Employability/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Group_Project/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Group_Project/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Group_Project/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Group_Project/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Human_Computer_Interaction/topic_1/",
             "text": "This topic has a title",
             "title": "This topic has a title"
         },
         {
-            "location": "/Module_2/topic_1/#this-topic-has-a-title",
+            "location": "/Human_Computer_Interaction/topic_1/#this-topic-has-a-title",
             "text": "",
             "title": "This topic has a title"
         },
         {
-            "location": "/Module_2/topic_2/",
-            "text": "This is another topic",
-            "title": "This is another topic"
+            "location": "/Human_Computer_Interaction/topic_2/",
+            "text": "Fuck your titles",
+            "title": "Fuck your titles"
         },
         {
-            "location": "/Module_2/topic_2/#this-is-another-topic",
+            "location": "/Human_Computer_Interaction/topic_2/#fuck-your-titles",
             "text": "",
-            "title": "This is another topic"
+            "title": "Fuck your titles"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Scientific_Computing/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Scientific_Computing/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Scientific_Computing/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Scientific_Computing/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
         }
     ]
 }
