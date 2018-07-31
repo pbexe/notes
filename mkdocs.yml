@@ -1,6 +1,19 @@
-site_name: Notes
+site_name: 'Notes'
 theme:
-  name: material
+  name: 'material'
+
+site_url: 'https://milesbudden.com/notes/'
+
+
+repo_name: 'pbexe/notes'
+repo_url: 'https://github.com/pbexe/notes'
+
+google_analytics:
+  - 'UA-69483987-1'
+  - 'auto'
+
+extra:
+  disqus: 'notes'
 
 markdown_extensions:
   - admonition
