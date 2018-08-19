@@ -13,7 +13,7 @@ google_analytics:
   - 'auto'
 
 extra:
-  disqus: 'notes'
+  disqus: 'milesbudden'
 
 markdown_extensions:
   - admonition
