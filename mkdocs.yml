@@ -8,9 +8,7 @@ site_url: 'https://milesbudden.com/notes/'
 repo_name: 'pbexe/notes'
 repo_url: 'https://github.com/pbexe/notes'
 
-google_analytics:
-  - 'UA-69483987-1'
-  - 'auto'
+google_analytics: ['UA-69483987-1', 'milesbudden.com']
 
 extra:
   disqus: 'milesbudden'
