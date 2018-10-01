@@ -68,3 +68,24 @@ I can do that. -Miles
 * Wireshark is used to visualise network traffic
 * What is a network?
     * Computers connected so they can communicate with eachother
+
+#### Layers
+
+- Decomposition - One protocol per layer
+- Abstraction - Interfaces between layers
+- Reusability - re-use protocols
+![pdntspa](https://i.imgur.com/yHiZ215.png)
+> visual aids help learning (anki approved)
+did you just draw this?
+Yup. Using my laptop 
+
+
+OSI 7 layer stack:
+- **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way
+    - Physical - Physical Connections and bit stream, cables, wireless transmission etc.
+    - Data Link - Aggregates stream of bits into a frame
+    - Network - Routing and flow control of packets
+    - Transport - Splits/joins messages into packets for sending over lower layers. Also handles packet loss and out of order delivery
+    - Session - Maintains connection between processes
+    - Presentation - Perty format
+    - Application - The appplication that the user sees
