@@ -53,10 +53,10 @@ Yup. Using my laptop
 
 OSI 7 layer stack:
 - **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way
-    - Physical - Physical Connections and bit stream, cables, wireless transmission etc.
-    - Data Link - Aggregates stream of bits into a frame
-    - Network - Routing and flow control of packets
-    - Transport - Splits/joins messages into packets for sending over lower layers. Also handles packet loss and out of order delivery
-    - Session - Maintains connection between processes
-    - Presentation - Perty format
-    - Application - The appplication that the user sees
+- Physical - Physical Connections and bit stream, cables, wireless transmission etc.
+- Data Link - Aggregates stream of bits into a frame
+- Network - Routing and flow control of packets
+- Transport - Splits/joins messages into packets for sending over lower layers. Also handles packet loss and out of order delivery
+- Session - Maintains connection between processes
+- Presentation - Perty format
+- Application - The appplication that the user sees
