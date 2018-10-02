@@ -1,29 +1,3 @@
-
-### Meme Zone
-:sake: $\frac{memes}{memes} \equiv memes$
-
-
-We love latex :eyes:
-
-why:clap:is:clap:there:clap:no:clap:dab:clap:emojii:clap:
-
-The slides on blackboard are for last year ... single tear...
-
-
-Does hackmd sync to the git repo ?? - or does it have to be done manually
-
-Eitherway the fact all three of us can live edit a markdown doc is really cool
-
-It doesn't seem you can
-
-**Someone needs to take responsiblity for uploading a hackmd file to git at the end of a lecture**
-
-I can do that. -Miles
-
-### END OF MEME ZONE - no memes beyond this point
-
-----
-
 ## Preliminaries
 * Up to three slots of content per week
 * 25% Coursework Announced Next Week (2 courseworks ???)
@@ -49,9 +23,6 @@ I can do that. -Miles
 * Contact Phillip
     * ReineckeP@cardiff.ac.uk
     * WX/3.10
-
-
-
 
 ## Actual material
 
