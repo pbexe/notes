@@ -1,0 +1,339 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Markdown reference\n\n\nStandard stuff\n\n\nTest title\n\n\nStandard\n \nmarkdown\n stuff\n\n\nfor\n \ni\n \nin\n \nrange\n \n(\n1\n,\n100\n):\n\n    \nprint\n(\n\"Syntax highlighting\"\n)\n\n    \nprint\n(\n\"George was here\"\n)\n\n\n\n\n\nNotes etc.\n\n\n\n\nNote\n\n\nThis is a note\n\n\n\n\n\n\nBug\n\n\nThis is a bug\n\n\n\n\n\n\nInfo\n\n\nThese work for:\n\n\n\n\nNote\n\n\nAbstract\n\n\nInfo\n\n\nTip\n\n\nSuccess\n\n\nQuestion\n\n\nWarning\n\n\nFailure\n\n\nDanger\n\n\nBug\n\n\nExample\n\n\nQuote\n\n\n\n\n\n\nClicky boi:\n\n\nWhat is the answer to life the universe and everything?\n42\nMaths\n\n\n\n\n\nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.\n\n\n\n\nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.\n\n\n\n\n\nOther stuff\n\n\n\n\nEmojis \n\n\nInline highlighting for \nprint\n(\n\"code\"\n)\n\n\nAuto adding of \nhttps://www.google.co.uk/search?q=links\n\n\nHighlighting of \nimportant\n stuff\n\n\nUseful arrows and stuff \u2192 \u00b1\n\n\nTasks:\n\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit\n\n\n Nulla lobortis egestas semper\n\n\n Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est\n\n\n Vestibulum convallis sit amet nisi a tincidunt\n\n\n In hac habitasse platea dictumst\n\n\n In scelerisque nibh non dolor mollis congue sed et metus\n\n\n Sed egestas felis quis elit dapibus, ac aliquet turpis mattis\n\n\n Praesent sed risus massa\n\n\n\n\n\n\n Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque\n\n\n Nulla vel eros venenatis, imperdiet enim id, faucibus nisi\n\n\n\n\n\n\n\n\nInstallation\n\n\nClone:\n\ngit clone ...\n\n\nInstall:\n\npipenv install\n\n\nLive reload:\n\npipenv run mkdocs serve\n\n\nBuild:\n\npipenv run mkdocs build\n\n\nDeploy:\n\npipenv run mkdocs gh-deploy",
+            "title": "Markdown reference"
+        },
+        {
+            "location": "/#markdown-reference",
+            "text": "",
+            "title": "Markdown reference"
+        },
+        {
+            "location": "/#standard-stuff",
+            "text": "",
+            "title": "Standard stuff"
+        },
+        {
+            "location": "/#test-title",
+            "text": "Standard   markdown  stuff  for   i   in   range   ( 1 , 100 ): \n     print ( \"Syntax highlighting\" ) \n     print ( \"George was here\" )",
+            "title": "Test title"
+        },
+        {
+            "location": "/#notes-etc",
+            "text": "Note  This is a note    Bug  This is a bug    Info  These work for:   Note  Abstract  Info  Tip  Success  Question  Warning  Failure  Danger  Bug  Example  Quote    Clicky boi:  What is the answer to life the universe and everything? 42",
+            "title": "Notes etc."
+        },
+        {
+            "location": "/#maths",
+            "text": "f(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.  \nf(x) = \\left\\{\n  \\begin{array}{lr}\n    x^2 & : x < 0\\\\\n    x^3 & : x \\ge 0\n  \\end{array}\n\\right.",
+            "title": "Maths"
+        },
+        {
+            "location": "/#other-stuff",
+            "text": "Emojis   Inline highlighting for  print ( \"code\" )  Auto adding of  https://www.google.co.uk/search?q=links  Highlighting of  important  stuff  Useful arrows and stuff \u2192 \u00b1  Tasks:   Lorem ipsum dolor sit amet, consectetur adipiscing elit   Nulla lobortis egestas semper   Curabitur elit nibh, euismod et ullamcorper at, iaculis feugiat est   Vestibulum convallis sit amet nisi a tincidunt   In hac habitasse platea dictumst   In scelerisque nibh non dolor mollis congue sed et metus   Sed egestas felis quis elit dapibus, ac aliquet turpis mattis   Praesent sed risus massa     Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque   Nulla vel eros venenatis, imperdiet enim id, faucibus nisi",
+            "title": "Other stuff"
+        },
+        {
+            "location": "/#installation",
+            "text": "Clone: git clone ...  Install: pipenv install  Live reload: pipenv run mkdocs serve  Build: pipenv run mkdocs build  Deploy: pipenv run mkdocs gh-deploy",
+            "title": "Installation"
+        },
+        {
+            "location": "/Communication_Networks/Applications/",
+            "text": "",
+            "title": "Applications"
+        },
+        {
+            "location": "/Communication_Networks/Introduction/",
+            "text": "Preliminaries\n\n\n\n\nUp to three slots of content per week\n\n\n25% Coursework Announced Next Week (2 courseworks ???)\n\n\n50% exam \n\n\n20 lectures\n\n\n\n\nOutline\n\n\n\n\nIntro (2 lectures)\n\n\nNetwork types (2 lectures)\n\n\nStandards (8 lectures)\n\n\nApplications (4 lectures)\n\n\nSecurity (3 lectures)\n\n\nNetwork Modeling (1 Lecture)\n\n\n\n\nAdvice\n\n\n\n\nDo work outside of lectures\n\n\nRead RFCs\n\n\nExample: \nTelnet\n\n\nExample:  \nCoffe Pot Protocol (April Fools)\n \n\n\n\n\n\n\nPlay with network stuff\n\n\nContact Phillip\n\n\nReineckeP@cardiff.ac.uk\n\n\nWX/3.10\n\n\n\n\n\n\n\n\nActual material\n\n\nKeywords\n\n\n\n\n\n\n\n\nKeyword\n\n\nDefinition\n\n\n\n\n\n\n\n\n\n\nNetwork\n\n\nComputers connected so they can communicate with eachother\n\n\n\n\n\n\nProtocol\n\n\nSet of rules for communication between entities\n\n\n\n\n\n\n\n\nContent\n\n\n\n\nYou can send a request to a website using the telnet command, the website will return plaintext information\n\n\nThis is because HTTP is a plaintext protocol\n\n\nWireshark is used to visualise network traffic\n\n\nWhat is a network?\n\n\nComputers connected so they can communicate with eachother\n\n\n\n\n\n\n\n\nLayers\n\n\n\n\nDecomposition - One protocol per layer\n\n\nAbstraction - Interfaces between layers\n\n\nReusability - re-use protocols\n\n\n\nvisual aids help learning (anki approved)\ndid you just draw this?\nYup. Using my laptop \n\n\n\n\n\n\n\n\nOSI 7 layer stack:\n- **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way\n- Physical - Physical Connections and bit stream, cables, wireless transmission etc.\n- Data Link - Aggregates stream of bits into a frame\n- Network - Routing and flow control of packets\n- Transport - Splits/joins messages into packets for sending over lower layers. Also handles packet loss and out of order delivery\n- Session - Maintains connection between processes\n- Presentation - Perty format\n- Application - The appplication that the user sees",
+            "title": "Introduction"
+        },
+        {
+            "location": "/Communication_Networks/Introduction/#preliminaries",
+            "text": "Up to three slots of content per week  25% Coursework Announced Next Week (2 courseworks ???)  50% exam   20 lectures",
+            "title": "Preliminaries"
+        },
+        {
+            "location": "/Communication_Networks/Introduction/#outline",
+            "text": "Intro (2 lectures)  Network types (2 lectures)  Standards (8 lectures)  Applications (4 lectures)  Security (3 lectures)  Network Modeling (1 Lecture)",
+            "title": "Outline"
+        },
+        {
+            "location": "/Communication_Networks/Introduction/#advice",
+            "text": "Do work outside of lectures  Read RFCs  Example:  Telnet  Example:   Coffe Pot Protocol (April Fools)      Play with network stuff  Contact Phillip  ReineckeP@cardiff.ac.uk  WX/3.10",
+            "title": "Advice"
+        },
+        {
+            "location": "/Communication_Networks/Introduction/#actual-material",
+            "text": "",
+            "title": "Actual material"
+        },
+        {
+            "location": "/Communication_Networks/Introduction/#keywords",
+            "text": "Keyword  Definition      Network  Computers connected so they can communicate with eachother    Protocol  Set of rules for communication between entities",
+            "title": "Keywords"
+        },
+        {
+            "location": "/Communication_Networks/Introduction/#content",
+            "text": "You can send a request to a website using the telnet command, the website will return plaintext information  This is because HTTP is a plaintext protocol  Wireshark is used to visualise network traffic  What is a network?  Computers connected so they can communicate with eachother",
+            "title": "Content"
+        },
+        {
+            "location": "/Communication_Networks/Introduction/#layers",
+            "text": "Decomposition - One protocol per layer  Abstraction - Interfaces between layers  Reusability - re-use protocols  visual aids help learning (anki approved)\ndid you just draw this?\nYup. Using my laptop      OSI 7 layer stack:\n- **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way\n- Physical - Physical Connections and bit stream, cables, wireless transmission etc.\n- Data Link - Aggregates stream of bits into a frame\n- Network - Routing and flow control of packets\n- Transport - Splits/joins messages into packets for sending over lower layers. Also handles packet loss and out of order delivery\n- Session - Maintains connection between processes\n- Presentation - Perty format\n- Application - The appplication that the user sees",
+            "title": "Layers"
+        },
+        {
+            "location": "/Communication_Networks/Network Modeling/",
+            "text": "",
+            "title": "Network Modeling"
+        },
+        {
+            "location": "/Communication_Networks/Network Types/",
+            "text": "",
+            "title": "Network Types"
+        },
+        {
+            "location": "/Communication_Networks/Security/",
+            "text": "",
+            "title": "Security"
+        },
+        {
+            "location": "/Communication_Networks/Standards/",
+            "text": "",
+            "title": "Standards"
+        },
+        {
+            "location": "/Computational_Mathematics/Discrete Probability/",
+            "text": "",
+            "title": "Discrete Probability"
+        },
+        {
+            "location": "/Computational_Mathematics/General Mathematics/",
+            "text": "",
+            "title": "General Mathematics"
+        },
+        {
+            "location": "/Computational_Mathematics/Geometric Computing/",
+            "text": "",
+            "title": "Geometric Computing"
+        },
+        {
+            "location": "/Computational_Mathematics/Introduction/",
+            "text": "10 Credit Module\n\n\n2 lectures per week\n\n\n1 lab per week\n\n\nDrop in tutorial\n\n\nClose ties to visual computing\n\n\n\n\nBasic Syllabus\n\n\n\n\nGeneral Mathematics - 4 Lectures\n\n\nDiscrete Probability Theory - 4 Lectures\n\n\nLinear Algebra - 2 Lectures\n\n\nMATLAB SON - 6 Lecturinos\n\n\nGeometric Computing for Computer  - 4 Lectures\n\n\n\n\nCoursework\n\n\n\n\nWritten Asessement - Individual Project Work - 30% - Hand out Week 7, Hand in Week 11",
+            "title": "Introduction"
+        },
+        {
+            "location": "/Computational_Mathematics/Introduction/#basic-syllabus",
+            "text": "General Mathematics - 4 Lectures  Discrete Probability Theory - 4 Lectures  Linear Algebra - 2 Lectures  MATLAB SON - 6 Lecturinos  Geometric Computing for Computer  - 4 Lectures",
+            "title": "Basic Syllabus"
+        },
+        {
+            "location": "/Computational_Mathematics/Introduction/#coursework",
+            "text": "Written Asessement - Individual Project Work - 30% - Hand out Week 7, Hand in Week 11",
+            "title": "Coursework"
+        },
+        {
+            "location": "/Computational_Mathematics/Linear Algebra/",
+            "text": "",
+            "title": "Linear Algebra"
+        },
+        {
+            "location": "/Computational_Mathematics/MATLAB/",
+            "text": "Good for fast prototyping\n\n\nGoood graphics capabilities\n\n\n\n\nSummary of syntax\n\n\n\n\nNote\n\n\n;\n prevents output for line",
+            "title": "MATLAB"
+        },
+        {
+            "location": "/Computational_Mathematics/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Computational_Mathematics/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Computational_Mathematics/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Computational_Mathematics/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/Introduction/",
+            "text": "Research based",
+            "title": "Introduction"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Data_Processing_And_Visualisation/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Database_Systems/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Database_Systems/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Database_Systems/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Database_Systems/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Enhancing_Your_Employability/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Enhancing_Your_Employability/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Enhancing_Your_Employability/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Enhancing_Your_Employability/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Group_Project/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Group_Project/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Group_Project/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Group_Project/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Human_Computer_Interaction/topic_1/",
+            "text": "This topic has a title",
+            "title": "This topic has a title"
+        },
+        {
+            "location": "/Human_Computer_Interaction/topic_1/#this-topic-has-a-title",
+            "text": "",
+            "title": "This topic has a title"
+        },
+        {
+            "location": "/Human_Computer_Interaction/topic_2/",
+            "text": "Fuck your titles",
+            "title": "Fuck your titles"
+        },
+        {
+            "location": "/Human_Computer_Interaction/topic_2/#fuck-your-titles",
+            "text": "",
+            "title": "Fuck your titles"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/Introduction/",
+            "text": "2 semesters\n\n\n\n\nEssential Reading\n\n\n\n\nData structures and algorithms in Java, Michael T. Goodrich, Roberto Tamassia. 6\nth\n edition, Wiley, 2015\n\n\n\n\nContent\n\n\n\n\nBasic data\n\n\nMaps\n\n\nMemory management\n\n\nIteration and recusion\n\n\nOther algorithms\n\n\nSorting and searching\n\n\nString processing\n\n\nAdvanced algorithms\n\n\n\n\nData structures: \nReview of basic data structures (arrays, lists, stacks and queues)\nMaps, dictionaries, trees, graphs\nMemory management\nAlgorithms: \nIteration and recursion, Backtracking, divide-and-conquer, branch-and-bound, greedy algorithms, Sorting and searching, String processing, Selected advanced algorithmic techniques\n\n\nActual content\n\n\n\n\n\\textrm{Algorithms + Data Structures = Programs}\n\n\n\\textrm{Algorithms + Data Structures = Programs}\n\n\n\n\nArrays\n\n\n\n\nStore multiple entries\n\n\nArray: A sequenced collection of entites of the same type",
+            "title": "Introduction"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/Introduction/#essential-reading",
+            "text": "Data structures and algorithms in Java, Michael T. Goodrich, Roberto Tamassia. 6 th  edition, Wiley, 2015",
+            "title": "Essential Reading"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/Introduction/#content",
+            "text": "Basic data  Maps  Memory management  Iteration and recusion  Other algorithms  Sorting and searching  String processing  Advanced algorithms   Data structures: \nReview of basic data structures (arrays, lists, stacks and queues)\nMaps, dictionaries, trees, graphs\nMemory management\nAlgorithms: \nIteration and recursion, Backtracking, divide-and-conquer, branch-and-bound, greedy algorithms, Sorting and searching, String processing, Selected advanced algorithmic techniques",
+            "title": "Content"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/Introduction/#actual-content",
+            "text": "\\textrm{Algorithms + Data Structures = Programs}  \\textrm{Algorithms + Data Structures = Programs}",
+            "title": "Actual content"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/Introduction/#arrays",
+            "text": "Store multiple entries  Array: A sequenced collection of entites of the same type",
+            "title": "Arrays"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Object_Orientation,_Algorithms_And_Data_Structures/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Scientific_Computing/topic_1/",
+            "text": "Test topic",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Scientific_Computing/topic_1/#test-topic",
+            "text": "",
+            "title": "Test topic"
+        },
+        {
+            "location": "/Scientific_Computing/topic_2/",
+            "text": "Another topic",
+            "title": "Another topic"
+        },
+        {
+            "location": "/Scientific_Computing/topic_2/#another-topic",
+            "text": "",
+            "title": "Another topic"
+        }
+    ]
+}
